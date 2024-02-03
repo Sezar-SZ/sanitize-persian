@@ -25,7 +25,10 @@
         "url": "https://github.com/Sezar-SZ/sanitize-persian.git"
     },
     "keywords": [
-        "sanitize",
+        "sanitize persian text",
+        "sanitize farsi text",
+        "sanitize persian string",
+        "sanitize farsi string",
         "persian",
         "farsi"
     ],
