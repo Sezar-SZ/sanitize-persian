@@ -2,6 +2,8 @@
 
 Package to easily sanitize your Persian (Farsi) strings and numbers.
 
+This Package converts Arabic letters and numbers to Persian.
+
 ## Usage
 
 ```js

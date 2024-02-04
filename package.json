@@ -29,6 +29,8 @@
         "sanitize farsi text",
         "sanitize persian string",
         "sanitize farsi string",
+        "arabic to farsi",
+        "arabic to persian",
         "persian",
         "farsi"
     ],
