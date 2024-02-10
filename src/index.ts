@@ -1,7 +1,6 @@
-function englishFarsiNumbers(str: string) {
-    const persianNumbers = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
-    const arabicNumbers = ["٠", "١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩"];
+import { alphabetMap, arabicNumbers, persianNumbers } from "./constants";
 
+function englishFarsiNumbers(str: string) {
     const persian = str
         .replace(/[0-9]/g, (match) => persianNumbers[parseInt(match)])
         .replace(
@@ -17,17 +16,6 @@ function englishFarsiNumbers(str: string) {
 }
 
 function arabicToPersian(text: string) {
-    const alphabetMap = new Map([
-        ["ك", "ک"],
-        ["ي", "ی"],
-        ["ٱ", "ا"],
-        ["أ", "ا"],
-        ["إ", "ا"],
-        ["ة", "ه"],
-        ["ؤ", "و"],
-        ["ئ", "ی"],
-    ]);
-
     const regex = new RegExp([...alphabetMap.keys()].join("|"), "g");
 
     return text.replace(regex, (match) => alphabetMap.get(match) || match);
